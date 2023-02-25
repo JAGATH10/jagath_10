@@ -1,0 +1,370 @@
+.navbar ul {   
+    display: flex;  
+    align-items: center;
+    height: 45px;
+    width: 360px; 
+    top:0;
+    padding: 5px;
+    margin-left: 37%;  
+    margin-top: 0;
+    box-shadow: 0 0 3px 0 rgb(168, 8, 8);  
+    position: fixed;
+    background-color:rgb(21, 21, 21);
+    z-index: 999;
+ }  
+    .navbar * {  
+    display: inline;  
+    }  
+    .navbar li{
+        margin:auto;
+        flex:auto;
+    }
+    .navbar li a {  
+        display:block;
+    background-color:rgb(21, 21, 21);
+    color:white;  
+    padding: 14px 16px;
+    text-decoration: none;  
+    }  
+    .navbar li a:hover {  
+        background-color:white;
+        color:red;  
+        }        
+  .firstpage{
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 350px;
+    margin-bottom: 350px;
+    
+  }
+
+  body{
+   background-color: black;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  #About{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    margin-top: 50px;
+  }
+  .aboutsection{
+    display:flex;
+    flex-direction: row;
+  }
+  img{
+    width:400px;
+    height:400px;
+    border: 2px solid red;
+    border-radius: 25%;
+  }
+  #carreerobjective{
+    padding: 30px;
+    line-height:25px;
+  }
+  #abouth1{
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+
+
+
+
+
+
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color:grey;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    color:white;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #fe0101;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: -80px;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid grey;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent red;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid grey;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent red transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: black;
+    position: relative;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .content:hover{
+    background-color: rgb(182, 8, 8);
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent red transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+    .left{
+      left:0px;
+    }
+  }
+
+  #Educationdetails{
+    text-align: center;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 100px;
+  }
+
+  #skills{
+    margin-top: 100px;
+    color:white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .container1 {
+    width: 50%;
+    background-color: #ddd;
+  }
+  
+  .skills1 {
+    text-align: right;	
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+
+  }
+  #skillcontainer{
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 30%;
+    margin-bottom: 100px;
+  }
+  .html {width: 90%; background-color: #ff5e00;}
+  .css {width: 80%; background-color: #2196F3;}
+  .js {width: 50%; background-color: #fffb00;}
+  .c {width: 80%; background-color: #0261ae;}
+  .cpp {width: 30%; background-color: #028bfb;}
+  .mern {width: 30%; background-color: #fb1f02;}
+
+  #Acheivements{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    text-align: center;
+  }
+
+  #acheivementcontainer{
+    width:75%;
+    height:300px;
+    margin-left: 12%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding:2px;
+  }
+  .acheivementtiles{
+    width:25%;
+    height:295px;
+    background-color: black;
+    border: 2px ;
+    border-radius: 25%;
+    margin:5px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 2px;
+    border-radius: 25%;
+  }
+  
+  .acheivementtiles:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 2px solid red;
+    border-radius: 25%;
+  }
+  
+  .flip-card-front {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flip-card-back {
+    background-color: red;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  #contactblock{
+    margin-top: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color:white;
+
+  }
+  #contactlogos{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  #contactlogos a img{
+      width:50px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 25%;
+      background-color: black;
+      margin: 10px;
+  }
+
+
+  #projectheading{
+    margin-top: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;  
+    color:white;
+  }
+  .projecttile{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+  }
+
+  .projectinnerheading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;  
+    color:white;
+  }
+  .projectflex{
+    width:400px;
+    height: 500px;
+    border: 2px solid red;
+    background-color: black;
+    overflow:visible;
+    color:white;
+    padding:25px;
+    border-radius: 10%;
+    margin:15px;
+  }
+
+  #backgroundimageURL{
+    background-image: url('coolbackground.png');
+  }
