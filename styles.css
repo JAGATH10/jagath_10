@@ -231,11 +231,11 @@
     margin-left: 30%;
     margin-bottom: 100px;
   }
-  .html {width: 90%; background-color: #ff5e00;}
-  .css {width: 80%; background-color: #2196F3;}
+  .html {width: 60%; background-color: #ff5e00;}
+  .css {width: 50%; background-color: #2196F3;}
   .js {width: 50%; background-color: #fffb00;}
   .c {width: 80%; background-color: #0261ae;}
-  .cpp {width: 30%; background-color: #028bfb;}
+  .java {width: 30%; background-color: #028bfb;}
   .mern {width: 30%; background-color: #fb1f02;}
 
   #Acheivements{
@@ -374,4 +374,8 @@
 
   #backgroundimageURL{
     background-image: url('coolbackground.png');
+  }
+  #location{
+    text-align: center;
+    color: white;
   }
