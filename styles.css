@@ -154,7 +154,7 @@
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: black;
+    background-color: red;
     position: relative;
     border-radius: 6px;
     text-align: center;
@@ -300,8 +300,23 @@
     background-color: red;
     color: white;
     transform: rotateY(180deg);
+    overflow: hidden;
   }
-
+  .flip-card-back a{
+     font-family: 'Trebuchet MS';
+     padding: 10px 24px;
+     background-color: rgb(225, 197, 197);
+     border: none;
+     color: black;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     border-radius: 5px;
+  }
+  .flip-card-back a:hover{
+    background-color: lightskyblue;
+  }
   #contactblock{
     margin-top: 200px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
